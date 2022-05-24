@@ -168,13 +168,14 @@ header {
   border-radius: 15px;
   padding: 1.5rem 2rem;
   cursor: pointer;
+  border: 1px solid transparent;
 
   color: var(--color-gray);
 }
 
 .button--border {
   padding: 1.2rem 2rem;
-  border: 1px solid var(--color-gray);
+  border-color: var(--color-gray);
 }
 
 .button--black {
@@ -303,4 +304,22 @@ main {
   .clients {
     justify-content: start;
   }
+}
+
+/* hover state */
+li:hover {
+  color: var(--color-black);
+}
+
+button:hover {
+  color: var(--color-black);
+}
+
+.button--border:hover {
+  border-color: var(--color-black);
+}
+
+.button--black:hover {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
 }
