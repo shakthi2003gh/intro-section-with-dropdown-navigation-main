@@ -3,11 +3,11 @@ const closeMenu = document.querySelector(".close-menu");
 const nestedLinks = document.querySelectorAll(".nested-links");
 
 openMenu.addEventListener("click", () => {
-  openMenu.closest(".menu").classList.add("show-menu");
+  openMenu.closest("aside").classList.add("show-menu");
 });
 
 closeMenu.addEventListener("click", () => {
-  closeMenu.closest(".menu").classList.remove("show-menu");
+  closeMenu.closest("aside").classList.remove("show-menu");
 });
 
 nestedLinks.forEach((button) => {
