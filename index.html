@@ -14,29 +14,33 @@
   <body>
     <header>
       <div>
-        <img src="/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" alt="" class="logo" />
       </div>
 
-      <aside class="menu show-menu">
+      <aside class="menu">
         <div class="menu__button">
           <img src="/images/icon-menu.svg" alt="" class="open-menu" />
-          <img src="/images/icon-close-menu.svg" alt="close-menu" />
+          <img src="/images/icon-close-menu.svg" alt="" class="close-menu" />
         </div>
+
+        <div class="overlay"></div>
 
         <nav class="nav-section">
           <ol class="nav__links">
             <li class="nested-links">
-              Features
+              <span>Features</span>
               <ol class="pop-up-menu">
-                <li>Todo List</li>
-                <li>Calendar</li>
-                <li>Remainders</li>
-                <li>Planing</li>
+                <li><img src="/images/icon-todo.svg" alt="" /> Todo List</li>
+                <li><img src="/images/icon-calendar.svg" alt="" /> Calendar</li>
+                <li>
+                  <img src="/images/icon-reminders.svg" alt="" /> Remainders
+                </li>
+                <li><img src="/images/icon-planning.svg" alt="" /> Planning</li>
               </ol>
             </li>
 
             <li class="nested-links">
-              Company
+              <span>Company</span>
               <ol class="pop-up-menu">
                 <li>History</li>
                 <li>Our Team</li>

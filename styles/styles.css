@@ -13,6 +13,7 @@ html {
 
 body {
   min-width: 375px;
+  color: var(--color-gray);
 }
 
 /* Color palette */
@@ -26,4 +27,171 @@ body {
 body {
   font-family: "Epilogue", sans-serif;
   font-size: 1.8rem;
+}
+
+h1 {
+  color: var(--color-black);
+  margin: 1.5rem 0;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.6ch;
+  margin: 0 0 2.5rem;
+  padding: 0 1.1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+
+.open-menu {
+  width: 35px;
+}
+
+.close-menu {
+  position: fixed;
+  display: none;
+  width: 28px;
+  z-index: 5245;
+  top: 2rem;
+  right: 1.8rem;
+}
+
+.nav-section {
+  display: none;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
+  gap: 2.5rem;
+}
+
+.nav__links li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nested-links span {
+  position: relative;
+}
+
+.nested-links span::after {
+  position: absolute;
+  content: url(/images/icon-arrow-down.svg);
+  right: -2.5rem;
+  top: -2px;
+}
+
+.pop-up-menu {
+  display: none;
+  padding: 0;
+}
+
+.pop-up-menu li {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.pop-up-menu img {
+  width: 20px;
+}
+
+.show-menu .open-menu {
+  display: none;
+}
+
+.show-menu .close-menu {
+  display: block;
+}
+
+.show-menu .nav-section {
+  position: fixed;
+  display: block;
+  background-color: var(--color-white);
+  inset: 0;
+  left: auto;
+  width: 65%;
+  max-width: 350px;
+  padding-top: 6rem;
+}
+
+.show-menu .overlay {
+  position: fixed;
+  content: "";
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.show .pop-up-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  margin-left: 2.5rem;
+  gap: 2rem;
+}
+
+/* Buttons section */
+.button {
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+
+  color: var(--color-gray);
+}
+
+.button--border {
+  padding: 1.2rem 2rem;
+  border: 1px solid var(--color-gray);
+}
+
+.button--black {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.nav__button {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__button .button {
+  margin: 0 3rem;
+  width: auto;
+}
+
+/* main content */
+main {
+  text-align: center;
+}
+
+.hero-image {
+  margin-bottom: 4rem;
+}
+
+.hero-image > img {
+  width: 100%;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 5rem 0 9rem;
+  padding: 0 1.5rem;
+}
+
+.clients img {
+  width: 8rem;
+  height: 2rem;
 }
