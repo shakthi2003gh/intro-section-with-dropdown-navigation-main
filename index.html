@@ -10,9 +10,75 @@
     <link rel="stylesheet" href="/styles/styles.css" />
     <script src="/index.js"></script>
   </head>
+
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <header>
+      <div>
+        <img src="/images/logo.svg" alt="" />
+      </div>
+
+      <aside class="menu show-menu">
+        <div class="menu__button">
+          <img src="/images/icon-menu.svg" alt="" class="open-menu" />
+          <img src="/images/icon-close-menu.svg" alt="close-menu" />
+        </div>
+
+        <nav class="nav-section">
+          <ol class="nav__links">
+            <li class="nested-links">
+              Features
+              <ol class="pop-up-menu">
+                <li>Todo List</li>
+                <li>Calendar</li>
+                <li>Remainders</li>
+                <li>Planing</li>
+              </ol>
+            </li>
+
+            <li class="nested-links">
+              Company
+              <ol class="pop-up-menu">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ol>
+            </li>
+
+            <li>Careers</li>
+
+            <li>About</li>
+          </ol>
+
+          <div class="nav__button">
+            <button class="button">Login</button>
+            <button class="button button--border">Register</button>
+          </div>
+        </nav>
+      </aside>
+    </header>
+
+    <main>
+      <div class="hero-image">
+        <img src="/images/image-hero-mobile.png" alt="" />
+      </div>
+
+      <section class="hero-content">
+        <h1>Make remote work</h1>
+
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <button class="button button--black">Learn more</button>
+
+        <div class="clients">
+          <img src="/images/client-databiz.svg" alt="" />
+          <img src="/images/client-audiophile.svg" alt="" />
+          <img src="/images/client-meet.svg" alt="" />
+          <img src="/images/client-maker.svg" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
