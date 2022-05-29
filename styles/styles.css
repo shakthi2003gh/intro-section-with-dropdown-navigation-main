@@ -195,7 +195,7 @@ header {
 
 @media screen and (min-width: 550px) {
   header {
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     gap: 6.5rem;
   }
@@ -212,7 +212,7 @@ header {
     background-color: transparent;
     padding: 0;
     width: auto;
-    gap: 50%;
+    gap: 5rem;
   }
 
   .nav__links,
